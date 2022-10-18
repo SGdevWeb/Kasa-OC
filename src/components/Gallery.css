@@ -1,4 +1,7 @@
 .galleryContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     background-color: #F7F7F7;
     border-radius: 25px;
     max-width: 1240px;
@@ -10,4 +13,41 @@
 .lodging {
     display: flex;
     justify-content: center;
+    width: 30%;
 }
+
+@media (max-width: 1024px) {
+    .galleryContainer {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .galleryContainer {
+        margin-bottom: 22px;
+    }
+    .lodging {
+        width: 46%;
+    }
+}
+
+@media (max-width: 575px) {
+    .galleryContainer {
+        padding: 0;
+        background-color: #FFF;
+    }
+
+    .lodging {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media (max-width: 375px) {
+    .galleryContainer {
+        padding: 0;
+        background-color: #FFF;
+    }
+}
+

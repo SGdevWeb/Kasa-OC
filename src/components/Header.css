@@ -20,3 +20,49 @@ nav {
    color: #FF6060;
    text-decoration: none;
 } 
+
+.logo img:last-child {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .headerContainer {
+        padding: 40px 50px;
+    }
+
+    .nav-link {
+        padding-left: 29px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    .logo img:first-child {
+        display: none;
+    }
+
+    .logo img:last-child {
+        display:flex;
+    }
+}
+
+@media (max-width: 575px) {
+    .nav-link {
+        font-size: 13px;
+        padding-left: 14px;
+    }
+}
+
+@media (max-width: 425px) {
+    .nav-link {
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    .headerContainer {
+        padding: 20px 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    .nav-link {
+        font-size: 10px;
+    }
+}

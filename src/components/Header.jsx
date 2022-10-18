@@ -1,12 +1,14 @@
 import './Header.css';
 import { Link } from 'react-router-dom';
-import logo from '../assets/LOGO.svg';
+import logo from '../assets/logo.svg';
+import logoMobile from '../assets/logoMobile.svg'
 
 function Header() {
     return (
     <div className='headerContainer'>
-        <div>
+        <div className='logo'>
             <img src={logo} alt='Logo Kasa'/>
+            <img src={logoMobile} alt='Logo Kasa'/>
         </div>
         <div>
             <nav>

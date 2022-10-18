@@ -2,7 +2,7 @@
     height: 340px;
     max-width: 340px;
     border-radius: 10px;
-    margin: 25px;
+    margin: 25px 0;
     text-decoration: none;
     position: relative;
 }
@@ -23,3 +23,37 @@
     position: absolute;
     bottom: 0px;
 }
+
+@media (max-width: 1024px) {
+    .cardContainer {
+        margin: 12px 0;
+        height: 230px;
+    }
+
+    .cardContainer p {
+        font-size: 16px;
+        padding: 0px 10px 10px 10px;
+    }
+}
+
+@media (max-width: 575px) {
+    .cardContainer {
+        height: 230px;
+        max-width: 575px;
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .cardContainer {
+        margin: 12px 0;
+        height: 230px;
+        max-width: 375px;
+    }
+
+    .cardContainer p {
+        font-size: 16px;
+        padding: 0px 10px 10px 10px;
+    }
+}
+

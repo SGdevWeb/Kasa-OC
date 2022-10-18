@@ -25,3 +25,46 @@
     bottom: 150px;
     text-align: center;
 }
+
+@media (max-width: 1024px) {
+    .bannerContainer p {
+        font-size: 38px;
+        bottom: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bannerContainer {
+        height: 193px;
+        margin-bottom: 22px;
+    }
+
+    .bannerContainer p {
+        font-size: 28px;
+        bottom: 115px;
+    }
+}
+
+@media (max-width: 575px) {
+    .bannerContainer {
+        height: 150px;
+    }
+
+    .bannerContainer p {
+        font-size: 24px;
+        bottom: 90px;
+    }
+}
+
+@media (max-width: 425px) {
+    .bannerContainer {
+        height: 111px;
+    }
+    .bannerContainer p {
+        line-height: 24px;
+        bottom: 80px;
+        text-align: start;
+        margin-left: 16px;
+        width: 217px;
+    }
+}
