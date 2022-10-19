@@ -5,7 +5,9 @@ import Gallery from '../components/Gallery';
 function Home() {
     return (
     <div className="homeContainer">
-        <Banner />
+        <Banner 
+            pathname={window.location.pathname}
+        />
         <Gallery />
     </div>
     )

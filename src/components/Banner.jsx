@@ -1,12 +1,12 @@
 import './Banner.css'
-import image from '../assets/bannerImg.jpg'
 
-function Banner() {
-    return (
-    <div className="bannerContainer">
-        <img src={image} alt='paysage eric muhr'/>
-        <p>Chez vous, partout et ailleurs</p>
-    </div>
+function Banner(props) {
+    return props.pathname === '/' ? (
+        <div className="bannerContainerHome">
+            <p>Chez vous, partout et ailleurs</p>
+        </div>
+    ) : (
+        <div className="bannerContainerAbout"></div>
     )
 }
 
