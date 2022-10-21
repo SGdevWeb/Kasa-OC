@@ -7,12 +7,10 @@ function Slideshow(props) {
 
     function previous() {
         index === 0 ? setIndex(props.currentLodging.pictures.length -1) : setIndex(index -1)
-        console.log(index)
     }
 
     function next() {
         index === props.currentLodging.pictures.length -1 ? setIndex(0) : setIndex(index +1)
-        console.log(index)
     }
 
   return props.currentLodging.pictures.length > 1 ? (

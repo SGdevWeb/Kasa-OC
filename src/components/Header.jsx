@@ -1,9 +1,10 @@
 import './Header.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.svg';
 import logoMobile from '../assets/logoMobile.svg'
 
 function Header() {
+
     return (
     <div className='headerContainer'>
         <div className='logo'>
@@ -12,8 +13,28 @@ function Header() {
         </div>
         <div>
             <nav>
-                <Link className='nav-link' to="/">Accueil</Link>
-                <Link className='nav-link' to="/about">A Propos</Link>
+                <NavLink 
+                    className='nav-link'
+                    style={({isActive}) => {
+                        return {
+                            textDecoration: isActive ? "underline" : "none"
+                        } 
+                    }}
+                    to="/home"
+                >
+                    Accueil
+                </NavLink>
+                <NavLink 
+                    className='nav-link'
+                    style={({isActive}) => {
+                        return {
+                            textDecoration: isActive ? "underline" : "none"
+                        } 
+                    }} 
+                    to="/about"
+                >
+                    A Propos
+                </NavLink>
             </nav>
         </div>
     </div>

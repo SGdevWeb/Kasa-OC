@@ -1,6 +1,66 @@
 .lodgingContainer {
     padding-left: 100px;
     padding-right: 100px;
+    color: #FF6060;
+}
+
+.lodgingDescription {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1240px;
+}
+
+.lodgingTitle {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51px;
+    margin: 0;
+}
+
+.lodgingLocation {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0;
+}
+
+.rightContent {
+    min-width: 150px;
+}
+
+.host {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hostName {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 26px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.hostPicture {
+    border-radius: 50%;
+    width: 64px;
+}
+
+
+
+.collapsesContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1240px;
+    margin-bottom: 14px;
+    margin-top: 24px;
+}
+
+.collapsesContainer > * {
+    width: 47%;
 }
 
 @media (max-width: 768px) {

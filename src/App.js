@@ -12,7 +12,7 @@ function App() {
         <Router>
             <Header />
             <Routes>
-                <Route path='/' element={<Home />}/>
+                <Route path='/home' element={<Home />}/>
                 <Route path='/lodging/:id' element={<Lodging />}/>
                 <Route path='/about' element={<About />}/>
                 <Route path='*' element={<ErrorPage />}/>

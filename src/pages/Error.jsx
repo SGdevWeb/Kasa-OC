@@ -8,7 +8,7 @@ function ErrorPage() {
         <p>
             Oups! La page que vous demandez n'existe pas.
         </p>
-        <Link className='homeLink' to="/">Retourner sur la page d'accueil</Link>
+        <Link className='homeLink' to="/home">Retourner sur la page d'accueil</Link>
     </div>
     )
 }
