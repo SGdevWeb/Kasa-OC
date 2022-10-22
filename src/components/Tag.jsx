@@ -4,7 +4,7 @@ function Tag(props) {
   return (
     <div className='tagContainer'>
         {props.tags.map((element => (
-            <div className='tag'>
+            <div key={`${element}-${props.id}`} className='tag'>
                 {element}
             </div>
         )))}
