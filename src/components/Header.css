@@ -21,9 +21,12 @@ nav {
    text-decoration: none;
 } 
 
-.logo img:last-child {
+.smallLogo {
     display: none;
 }
+
+
+/* media queries */
 
 @media (max-width: 768px) {
     .headerContainer {
@@ -35,11 +38,12 @@ nav {
         font-size: 18px;
         text-transform: uppercase;
     }
-    .logo img:first-child {
+
+    .largeLogo {
         display: none;
     }
 
-    .logo img:last-child {
+    .smallLogo {
         display:flex;
     }
 }
@@ -56,12 +60,13 @@ nav {
         font-size: 12px;
         padding-left: 10px;
     }
+
     .headerContainer {
         padding: 20px 20px;
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 350px) {
     .nav-link {
         font-size: 10px;
     }

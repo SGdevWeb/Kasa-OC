@@ -1,4 +1,29 @@
 .ratingContainer {
     margin-top: 24px;
     font-size: 26px;
+    display: flex;
+    justify-content: flex-end;
+} 
+
+
+/* media queries */
+
+@media (max-width: 768px) {
+    .ratingContainer {
+        margin-top: 0;
+        align-items: center;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 475px) {
+    .ratingContainer {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 375px) {
+    .ratingContainer {
+        font-size: 15px;
+    }
 }

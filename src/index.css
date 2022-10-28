@@ -1,7 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
+  height: 100%;
 }
 
 code {
@@ -9,6 +18,8 @@ code {
     monospace;
 }
 
-* {
-  box-sizing: border-box;
+#root {
+  min-height: 100%;
+  padding-bottom: 209px;
+  position: relative;
 }

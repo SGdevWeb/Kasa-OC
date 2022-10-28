@@ -11,15 +11,6 @@ function Lodging() {
 
     const lodgingId = useParams().id
     const currentLodging = lodging.find((element) => element.id === lodgingId)
-    // const navigate = useNavigate()
-  
-    // if (currentLodging === undefined) return navigate('/error')
-
-
-    // const [firstName, lastName] = currentLodging.host.name.split(' ')
-
-
-
 
     return (currentLodging === undefined) ? (<Navigate />):(
     <div className="lodgingContainer">
@@ -50,16 +41,12 @@ function Lodging() {
                 <Collapse 
                     title='Description'
                     content={currentLodging.description}
-                    height='52px'
-                    fontSize='18px'
                 />
             </div>
             <div>
                 <Collapse 
                     title='Equipements'
                     content={currentLodging.equipments}
-                    height='52px'
-                    fontSize='18px'
                 />
             </div>
 

@@ -42,3 +42,42 @@
 .arrow {
     color: #FFF;
 }
+
+
+/* media queries */
+
+@media (max-width: 1024px) {
+    .dropdown {
+        height: 42px;
+        font-size: 20px;
+    }
+
+    .collapseDescription {
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .dropdown {
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .collapseDescription {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .dropdown {
+        height: 30px;
+        font-size: 13px;
+    }
+    
+    .collapseDescription {
+        font-size: 12px;
+        padding: 10px;
+    }
+}

@@ -16,6 +16,9 @@
     width: 30%;
 }
 
+
+/* media queries */
+
 @media (max-width: 1024px) {
     .galleryContainer {
         padding: 15px;
@@ -26,6 +29,7 @@
     .galleryContainer {
         margin-bottom: 22px;
     }
+
     .lodging {
         width: 46%;
     }
@@ -49,5 +53,6 @@
         padding: 0;
         background-color: #FFF;
     }
+
 }
 

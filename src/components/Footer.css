@@ -4,6 +4,9 @@
     align-items: center;
     flex-direction: column;
     background-color: black;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 .footerContainer img {
@@ -19,6 +22,13 @@
     font-size: 24px;
     margin-bottom: 29px;
 }
+
+.fa-copyright {
+    margin-right: 5px;
+}
+
+
+/* media queries */
 
 @media (max-width: 1024px) {
     .footerContainer p {

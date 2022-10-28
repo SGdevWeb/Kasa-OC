@@ -1,5 +1,5 @@
 import './Header.css';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../assets/logo.svg';
 import logoMobile from '../assets/logoMobile.svg'
 
@@ -7,11 +7,10 @@ function Header() {
 
     return (
     <div className='headerContainer'>
-        <div className='logo'>
-            <img src={logo} alt='Logo Kasa'/>
-            <img src={logoMobile} alt='Logo Kasa'/>
-        </div>
-        <div>
+            <Link to="/home">
+                <img className='largeLogo' src={logo} alt='Logo Kasa'/>
+                <img className='smallLogo' src={logoMobile} alt='Logo Kasa'/>
+            </Link>
             <nav>
                 <NavLink 
                     className='nav-link'
@@ -36,7 +35,6 @@ function Header() {
                     A Propos
                 </NavLink>
             </nav>
-        </div>
     </div>
     )
 }

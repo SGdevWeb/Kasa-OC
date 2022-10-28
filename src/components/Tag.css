@@ -1,13 +1,15 @@
 .tagContainer {
     display: flex;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .tag {
     min-width: 115px;
     height: 25px;
     margin-right: 10px;
-    padding: 10px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
     background-color: #FF6060;
     color: #fff;
     font-size: 14px;
@@ -15,4 +17,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+/* media queries */
+
+@media (max-width: 575px) {
+    .tag {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+@media (max-width: 475px) {
+    .tagContainer {
+        margin-top: 10px;
+    }
+    
+    .tag {
+        min-width: 84px;
+        height: 18px;
+        font-size: 10px;
+        line-height: 14px;
+    }
 }

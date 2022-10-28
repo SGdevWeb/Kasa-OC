@@ -37,6 +37,9 @@
     text-align: center;
 }
 
+
+/* media queries */
+
 @media (max-width: 1024px) {
     .bannerContainerHome p {
         font-size: 38px;
@@ -70,7 +73,9 @@
 @media (max-width: 425px) {
     .bannerContainerHome {
         height: 111px;
+        justify-content: flex-start;
     }
+    
     .bannerContainerHome p {
         line-height: 24px;
         bottom: 80px;

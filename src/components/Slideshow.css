@@ -43,6 +43,9 @@
     color: #fff;
 }
 
+
+/* media queries */
+
 @media (max-width: 768px) {
     .previous, .next {
         font-size: 60px;
@@ -54,6 +57,7 @@
     .slideshowContainer {
         height: 345px;
     }
+
     .previous, .next {
         bottom: 148px; 
     }
@@ -63,10 +67,12 @@
     .slideshowContainer {
         height: 300px;
     }
+
     .previous, .next {
         font-size: 40px;
         bottom: 138px;
     }
+
     .next {
         right: 10px;
     }
@@ -80,6 +86,7 @@
     .slideshowContainer {
         height: 255px;
     }
+    
     .previous, .next {
         font-size: 20px;
         bottom: 118px;

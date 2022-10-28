@@ -7,7 +7,7 @@ function Footer() {
         <img src={logo} alt='logo kasa'/>
         <p>
         <i className="fa-regular fa-copyright"></i>
-        2022 Kasa. All rights reserved
+        {new Date().getFullYear()} Kasa. All rights reserved
         </p>
     </div>
     )
