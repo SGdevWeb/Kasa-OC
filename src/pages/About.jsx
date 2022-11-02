@@ -8,13 +8,11 @@ function About() {
     <div className="aboutContainer">
         <Banner pathname={window.location.pathname}/>
         {kasaDescription.map((element) => (
-            <div key={element.id} className='collapseContainer'>
             <Collapse
                 key={element.id}
                 title={element.title}
                 content={element.description}
             />
-            </div>
         ))}
     </div>
     )

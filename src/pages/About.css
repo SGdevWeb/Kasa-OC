@@ -3,6 +3,17 @@
     padding-right: 100px;
 }
 
+@media (min-width: 1025px) {
+    .dropdown {
+        height: 47px;
+        font-size: 24px;
+    }
+
+    .collapseDescription {
+        font-size: 24px;
+    }
+}
+
 
 /* media queries */
 
