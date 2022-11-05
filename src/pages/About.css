@@ -4,12 +4,12 @@
 }
 
 @media (min-width: 1025px) {
-    .dropdown {
+    .aboutContainer .dropdown {
         height: 47px;
         font-size: 24px;
     }
 
-    .collapseDescription {
+    .aboutContainer .collapseDescription {
         font-size: 24px;
     }
 }
