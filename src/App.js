@@ -12,10 +12,10 @@ function App() {
         <Router>
             <Header />
             <Routes>
-                <Route path='Kasa-OC/home' element={<Home />}/>
-                <Route path='Kasa-OC/lodging/:id' element={<Lodging />}/>
-                <Route path='Kasa-OC/about' element={<About />}/>
-                <Route path='Kasa-OC/error' element={<ErrorPage/>}/>
+                <Route path='/home' element={<Home />}/>
+                <Route path='/lodging/:id' element={<Lodging />}/>
+                <Route path='/about' element={<About />}/>
+                <Route path='/error' element={<ErrorPage/>}/>
                 <Route path='*' element={<ErrorPage />}/>
             </Routes>
             <Footer />
