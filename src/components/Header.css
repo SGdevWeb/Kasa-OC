@@ -19,7 +19,11 @@ nav {
    line-height: 34px;
    color: #FF6060;
    text-decoration: none;
-} 
+}
+
+.active {
+    text-decoration: underline;
+}
 
 .smallLogo {
     display: none;

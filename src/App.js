@@ -12,7 +12,7 @@ function App() {
         <Router>
             <Header />
             <Routes>
-                <Route path='/home' element={<Home />}/>
+                <Route path='/' element={<Home />} exact={true}/>
                 <Route path='/lodging/:id' element={<Lodging />}/>
                 <Route path='/about' element={<About />}/>
                 <Route path='/error' element={<ErrorPage/>}/>

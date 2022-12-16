@@ -7,29 +7,19 @@ function Header() {
 
     return (
     <div className='headerContainer'>
-            <Link to="/home">
+            <Link to="/">
                 <img className='largeLogo' src={logo} alt='Logo Kasa'/>
                 <img className='smallLogo' src={logoMobile} alt='Logo Kasa'/>
             </Link>
             <nav>
                 <NavLink 
-                    className='nav-link'
-                    style={({isActive}) => {
-                        return {
-                            textDecoration: isActive ? "underline" : "none"
-                        } 
-                    }}
-                    to="/home"
+                    className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}
+                    end to="/"
                 >
                     Accueil
                 </NavLink>
                 <NavLink 
-                    className='nav-link'
-                    style={({isActive}) => {
-                        return {
-                            textDecoration: isActive ? "underline" : "none"
-                        } 
-                    }} 
+                    className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}
                     to="/about"
                 >
                     A Propos
